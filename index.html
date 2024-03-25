@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Straight to the Point Archery Academy</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
 
     <body>
         <header>
-            <img src="assets/archeryAcademy-logo-color.png" alt="color logo for Straight to the Point Archery Academy">
+            <img id="logo" src="assets/archeryAcademy-logo-white.png" alt="white logo for Straight to the Point Archery Academy">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -18,14 +19,16 @@
         </header>
 
         <main>
-            <section>
+            <section class="grid">
                 <h2>About</h2>
-                <p>Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.  Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.</p>
-                <p>Interested in classes or private lessons?</p>
-                <a href="services.html">Click here to view our options!</a>  
+                <div>
+                    <p>Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.  Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.</p>
+                    <p>Interested in classes or private lessons?</p>
+                    <a class="blue-link" href="services.html">Click here to view our options!</a>  
+                </div>
+                    
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-ylW1yEP9Vc?si=Ez7syttUMgx4SI92" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section><br>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ylW1yEP9Vc?si=Ez7syttUMgx4SI92" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <section>
                 <h2>Contact</h2>
@@ -38,14 +41,15 @@
         </main>
 
         <footer>
+            <img class="logo" src="assets/archeryAcademy-logo-white.png" alt="white logo for Straight to the Point Archery Academy">
             <nav>
-                <ul>
+                <ul id="foot-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="#">Our Team</a></li>
                 </ul>
             </nav>
-            <img src="assets/archeryAcademy-logo-white.png" alt="white logo for Straight to the Point Archery Academy">
+            <p class="foot-text">© 2018 Archery Academy | Seattle, WA</p>
         </footer>
     </body>
 </html>
