@@ -31,6 +31,11 @@ p {
     font-weight: 100;
 }
 
+a {
+    padding: .75rem;
+    margin: .75rem;
+}
+
 a,
 .foot-text {
     color: white;
@@ -44,10 +49,6 @@ footer {
 
 header {
     background-color: #03a3df;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     height: 10em;
     padding-left: 3em;
 }
@@ -57,14 +58,17 @@ header {
 }
 
 nav {
-    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding-right: 3em;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 li {
@@ -103,8 +107,22 @@ footer {
 }
 
 #foot-list {
-    justify-content: space-around;
-    
+    justify-content: flex-start;
+    padding: 0 0 0 0;
+}
+
+.left-margin-tweak {
+    margin-left: 0;
+}
+
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+
+.hidden:focus {
+    left: 0;
 }
 
 
